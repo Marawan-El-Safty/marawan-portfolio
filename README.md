@@ -1,83 +1,35 @@
-<div align="center">
-
 # Marawan Elsafty — Portfolio
 
-**Premium, animated personal portfolio for a full-stack web developer.**
+My personal portfolio site. I built it to show the kind of work I do — clean,
+animated, and fast — and to have one link I can share that points to everything
+else.
 
-Built with Next.js 14, TypeScript, Tailwind CSS, and Framer Motion.
+It has a light and dark theme (starts in dark), some motion touches like
+scroll reveals and a mobile menu, and it pulls all its content from a single
+file so it's easy to update.
 
-![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
-![Tailwind](https://img.shields.io/badge/Tailwind-3-38bdf8?logo=tailwindcss)
-![Framer Motion](https://img.shields.io/badge/Framer-Motion-ff0080?logo=framer)
+**Live:** https://marawan-portfolio-lemon.vercel.app
 
-</div>
+## Screenshots
 
----
+![Hero](docs/hero-dark.png)
+![Work](docs/work-dark.png)
 
-## 📸 Preview
+## What's in it
 
-![Hero](docs/hero.png)
-![Work](docs/work.png)
-![Contact](docs/contact.png)
+- Animated hero, work, services, about, and contact sections
+- Light / dark theme toggle (defaults to dark)
+- Responsive with a proper mobile menu
+- Social link preview image and basic SEO set up
 
-## ✨ Highlights
+## Built with
 
-- **Custom motion cursor** with hover-aware scaling
-- **Magnetic buttons & links** that respond to the pointer
-- **Word-by-word masked headline reveals** on scroll
-- **Parallax hero** with ambient gradient glows and film grain
-- **Infinite tech-stack marquee**
-- **Animated work, services, testimonials, about & contact sections**
-- **Animated mobile menu** — hamburger → full-screen overlay
-- **Dynamic OG image, favicon, sitemap & robots** generated at the edge (great
-  social previews + SEO, no external services)
-- Fully **responsive**, **accessible**, and **reduced-motion friendly**
-- **Zero backend** — deploys free anywhere, loads instantly
+Next.js 14, TypeScript, Tailwind CSS, and Framer Motion. All the text and
+project info lives in `src/lib/data.ts`.
 
-## 🛠️ Tech Stack
-
-| Layer     | Tech                                            |
-| --------- | ----------------------------------------------- |
-| Framework | [Next.js 14](https://nextjs.org/) (App Router)  |
-| Language  | [TypeScript](https://www.typescriptlang.org/)   |
-| Styling   | [Tailwind CSS](https://tailwindcss.com/)        |
-| Motion    | [Framer Motion](https://www.framer.com/motion/) |
-| Icons     | [Lucide](https://lucide.dev/)                   |
-
-## 🏗️ Structure
-
-```
-src/
-├── app/
-│   ├── page.tsx          # Assembles all sections
-│   ├── layout.tsx        # Fonts + metadata
-│   └── globals.css       # Design tokens, cursor, grain, gradients
-├── components/
-│   ├── cursor.tsx        # Custom motion cursor
-│   ├── magnetic.tsx      # Magnetic hover wrapper
-│   ├── reveal.tsx        # Scroll & masked-text reveals
-│   ├── nav.tsx
-│   └── sections/         # hero, marquee, work, services, about, contact, footer
-└── lib/
-    └── data.ts           # All content in one editable place
-```
-
-## 🧑‍💻 Getting Started
+## Running it
 
 ```bash
 npm install
 npm run dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000). Edit content in
-`src/lib/data.ts` — projects, services, stats, and profile all live there.
-
-## ☁️ Deployment
-
-Push to GitHub and import on [Vercel](https://vercel.com/) — no environment
-variables required.
-
-## 📄 License
-
-MIT
