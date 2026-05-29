@@ -59,6 +59,16 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
+    title: "Flowboard",
+    category: "Kanban App",
+    year: "2026",
+    blurb:
+      "A Trello-style kanban board with real drag-and-drop — move cards between lists, edit details, filter by priority, and search. Built with @dnd-kit and Supabase-ready.",
+    tags: ["Next.js", "TypeScript", "@dnd-kit", "Tailwind"],
+    live: "https://flowboard-theta-two.vercel.app",
+    code: "https://github.com/Marawan-El-Safty/flowboard",
+  },
+  {
     title: "Pulse Analytics",
     category: "Dashboard",
     year: "2026",
