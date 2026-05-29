@@ -59,6 +59,16 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
+    title: "Pulse Analytics",
+    category: "Dashboard",
+    year: "2026",
+    blurb:
+      "An analytics dashboard for an online store with charts I coded by hand instead of using a chart library — date filters, sortable tables, an activity feed, and dark mode.",
+    tags: ["Next.js", "TypeScript", "Tailwind", "SVG Charts"],
+    live: "https://pulse-analytics-nine-silk.vercel.app",
+    code: "https://github.com/Marawan-El-Safty/pulse-analytics",
+  },
+  {
     title: "AI Content Studio",
     category: "AI SaaS",
     year: "2026",
