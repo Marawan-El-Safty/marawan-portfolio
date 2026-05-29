@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { PROFILE } from "@/lib/data";
 import { Magnetic } from "./magnetic";
+import { ThemeToggle } from "./theme-toggle";
 import { cn } from "@/lib/utils";
 
 const LINKS = [
@@ -69,6 +70,7 @@ export function Nav() {
           </nav>
 
           <div className="flex items-center gap-2">
+            <ThemeToggle />
             <Magnetic>
               <a
                 href="#contact"

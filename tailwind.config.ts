@@ -1,15 +1,17 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: "class",
   content: ["./src/**/*.{ts,tsx}"],
   theme: {
     extend: {
       colors: {
-        paper: "#f7f7f4", // page background
-        ink: "#16161c", // primary text & dark buttons
-        surface: "#ffffff", // cards
-        line: "rgba(22,22,28,0.10)", // borders
-        accent: "#6d49ff", // violet — readable on light
+        // Theme-aware tokens — driven by CSS variables (see globals.css).
+        paper: "rgb(var(--paper) / <alpha-value>)", // page background
+        ink: "rgb(var(--ink) / <alpha-value>)", // primary text & solid buttons
+        surface: "rgb(var(--surface) / <alpha-value>)", // cards
+        line: "rgb(var(--line) / <alpha-value>)", // borders
+        accent: "#6d49ff", // violet — readable on both themes
         accent2: "#a78bfa", // soft violet
         lime: "#a6d608", // accent fill / dot
       },

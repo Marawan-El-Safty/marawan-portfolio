@@ -3,12 +3,34 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    /* In-between light — soft, warm, not stark white */
+    --paper: 237 236 230;
+    --surface: 247 246 241;
+    --ink: 28 28 34;
+    --line: 214 213 205;
+    --grad-start: 28 28 34;
+    color-scheme: light;
+  }
+
+  .dark {
+    --paper: 14 14 18;
+    --surface: 23 23 28;
+    --ink: 237 237 242;
+    --line: 56 56 66;
+    --grad-start: 255 255 255;
+    color-scheme: dark;
+  }
+
   html {
     scroll-behavior: smooth;
   }
   body {
     @apply bg-paper text-ink antialiased;
     font-feature-settings: "ss01", "cv01";
+    transition:
+      background-color 0.4s ease,
+      color 0.4s ease;
   }
   ::selection {
     background: #6d49ff;
@@ -25,7 +47,7 @@
   }
 }
 
-/* ── Soft ambient gradient blobs (subtle on light) ── */
+/* ── Soft ambient gradient blobs ── */
 .glow {
   position: absolute;
   border-radius: 9999px;
@@ -34,9 +56,14 @@
   z-index: 0;
 }
 
-/* ── Gradient heading text (dark → violet) ── */
+/* ── Gradient heading text (theme-aware base → violet) ── */
 .gradient-text {
-  background: linear-gradient(110deg, #16161c 25%, #6d49ff 60%, #a78bfa 85%);
+  background: linear-gradient(
+    110deg,
+    rgb(var(--grad-start)) 25%,
+    #6d49ff 60%,
+    #a78bfa 85%
+  );
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
