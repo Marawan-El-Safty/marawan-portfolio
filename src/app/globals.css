@@ -33,7 +33,7 @@
       color 0.4s ease;
   }
   ::selection {
-    background: #6d49ff;
+    background: #14b8a6;
     color: #fff;
   }
 }
@@ -61,8 +61,8 @@
   background: linear-gradient(
     110deg,
     rgb(var(--grad-start)) 25%,
-    #6d49ff 60%,
-    #a78bfa 85%
+    #14b8a6 60%,
+    #5eead4 85%
   );
   background-size: 200% auto;
   -webkit-background-clip: text;

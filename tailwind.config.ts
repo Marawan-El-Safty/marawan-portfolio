@@ -11,8 +11,8 @@ const config: Config = {
         ink: "rgb(var(--ink) / <alpha-value>)", // primary text & solid buttons
         surface: "rgb(var(--surface) / <alpha-value>)", // cards
         line: "rgb(var(--line) / <alpha-value>)", // borders
-        accent: "#6d49ff", // violet — readable on both themes
-        accent2: "#a78bfa", // soft violet
+        accent: "#14b8a6", // teal — readable on both themes
+        accent2: "#5eead4", // soft teal
         lime: "#a6d608", // accent fill / dot
       },
       fontFamily: {
