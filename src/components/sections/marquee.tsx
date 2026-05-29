@@ -12,7 +12,7 @@ export function Marquee() {
         <div className="flex shrink-0 animate-marquee items-center gap-10 pr-10">
           {items.map((tech, i) => (
             <span key={i} className="flex items-center gap-10">
-              <span className="text-2xl font-medium text-white/50 sm:text-3xl">
+              <span className="text-2xl font-medium text-ink/50 sm:text-3xl">
                 {tech}
               </span>
               <span className="text-accent">✦</span>
@@ -25,7 +25,7 @@ export function Marquee() {
         >
           {items.map((tech, i) => (
             <span key={i} className="flex items-center gap-10">
-              <span className="text-2xl font-medium text-white/50 sm:text-3xl">
+              <span className="text-2xl font-medium text-ink/50 sm:text-3xl">
                 {tech}
               </span>
               <span className="text-accent">✦</span>

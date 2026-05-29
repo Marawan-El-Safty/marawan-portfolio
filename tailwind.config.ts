@@ -5,11 +5,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: "#0a0a0b",
-        surface: "#101012",
-        line: "rgba(255,255,255,0.08)",
-        accent: "#c7f24d", // electric lime
-        accent2: "#7c5cff", // violet
+        paper: "#f7f7f4", // page background
+        ink: "#16161c", // primary text & dark buttons
+        surface: "#ffffff", // cards
+        line: "rgba(22,22,28,0.10)", // borders
+        accent: "#6d49ff", // violet — readable on light
+        accent2: "#a78bfa", // soft violet
+        lime: "#a6d608", // accent fill / dot
       },
       fontFamily: {
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],

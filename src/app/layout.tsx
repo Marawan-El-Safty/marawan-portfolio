@@ -45,7 +45,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${display.variable} font-sans grain`}>
+      <body className={`${inter.variable} ${display.variable} font-sans`}>
         {children}
       </body>
     </html>

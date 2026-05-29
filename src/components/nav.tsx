@@ -9,7 +9,6 @@ import { cn } from "@/lib/utils";
 const LINKS = [
   { href: "#work", label: "Work" },
   { href: "#services", label: "Services" },
-  { href: "#testimonials", label: "Testimonials" },
   { href: "#about", label: "About" },
   { href: "#contact", label: "Contact" },
 ];
@@ -45,11 +44,11 @@ export function Nav() {
           className={cn(
             "container-x mt-3 flex items-center justify-between rounded-full border border-transparent px-4 py-3 transition-all duration-500 sm:px-6",
             scrolled &&
-              "border-line bg-ink/70 backdrop-blur-xl supports-[backdrop-filter]:bg-ink/50",
+              "border-line bg-paper/70 backdrop-blur-xl supports-[backdrop-filter]:bg-paper/50",
           )}
         >
           <a href="#top" className="flex items-center gap-2 font-semibold">
-            <span className="grid size-8 place-items-center rounded-full bg-accent text-ink">
+            <span className="grid size-8 place-items-center rounded-full bg-ink text-paper">
               M
             </span>
             <span className="hidden sm:inline">
@@ -62,7 +61,7 @@ export function Nav() {
               <a
                 key={l.href}
                 href={l.href}
-                className="link-sweep text-sm text-white/70 transition-colors hover:text-white"
+                className="link-sweep text-sm text-ink/70 transition-colors hover:text-ink"
               >
                 {l.label}
               </a>
@@ -73,7 +72,7 @@ export function Nav() {
             <Magnetic>
               <a
                 href="#contact"
-                className="hidden rounded-full bg-white px-5 py-2 text-sm font-medium text-ink transition-colors hover:bg-accent sm:inline-block"
+                className="hidden rounded-full bg-ink px-5 py-2 text-sm font-medium text-paper transition-colors hover:bg-accent hover:text-white sm:inline-block"
               >
                 Let&apos;s talk
               </a>
@@ -89,15 +88,15 @@ export function Nav() {
               <span className="relative block h-3 w-5">
                 <motion.span
                   animate={open ? { rotate: 45, y: 5 } : { rotate: 0, y: 0 }}
-                  className="absolute left-0 top-0 h-0.5 w-5 bg-white"
+                  className="absolute left-0 top-0 h-0.5 w-5 bg-ink"
                 />
                 <motion.span
                   animate={open ? { opacity: 0 } : { opacity: 1 }}
-                  className="absolute left-0 top-[5px] h-0.5 w-5 bg-white"
+                  className="absolute left-0 top-[5px] h-0.5 w-5 bg-ink"
                 />
                 <motion.span
                   animate={open ? { rotate: -45, y: -5 } : { rotate: 0, y: 0 }}
-                  className="absolute bottom-0 left-0 h-0.5 w-5 bg-white"
+                  className="absolute bottom-0 left-0 h-0.5 w-5 bg-ink"
                 />
               </span>
             </button>
@@ -113,7 +112,7 @@ export function Nav() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 flex flex-col justify-center bg-ink/95 px-8 backdrop-blur-xl md:hidden"
+            className="fixed inset-0 z-40 flex flex-col justify-center bg-paper/95 px-8 backdrop-blur-xl md:hidden"
           >
             <nav className="flex flex-col gap-2">
               {LINKS.map((l, i) => (
@@ -124,7 +123,7 @@ export function Nav() {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.1 + i * 0.07 }}
-                  className="font-display text-5xl font-medium tracking-tight text-white/80 transition-colors hover:text-accent"
+                  className="font-display text-5xl font-medium tracking-tight text-ink/80 transition-colors hover:text-accent"
                 >
                   {l.label}
                 </motion.a>
@@ -135,7 +134,7 @@ export function Nav() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
-              className="mt-12 text-sm text-white/50"
+              className="mt-12 text-sm text-ink/50"
             >
               {PROFILE.email}
             </motion.a>

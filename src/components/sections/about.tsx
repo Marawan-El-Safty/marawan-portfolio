@@ -22,14 +22,14 @@ export function About() {
         </h2>
 
         {/* Stats */}
-        <div className="mt-20 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-4">
+        <div className="mt-20 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-3">
           {STATS.map((s, i) => (
             <Reveal key={s.label} delay={i * 0.05}>
               <div className="bg-surface p-8 text-center">
                 <div className="font-display text-4xl font-medium text-accent sm:text-5xl">
                   {s.value}
                 </div>
-                <div className="mt-2 text-sm text-white/50">{s.label}</div>
+                <div className="mt-2 text-sm text-ink/50">{s.label}</div>
               </div>
             </Reveal>
           ))}
@@ -38,7 +38,7 @@ export function About() {
         {/* Process */}
         <div className="mt-24">
           <Reveal>
-            <h3 className="mb-12 font-display text-2xl font-medium text-white/40 sm:text-3xl">
+            <h3 className="mb-12 font-display text-2xl font-medium text-ink/40 sm:text-3xl">
               How I work
             </h3>
           </Reveal>
@@ -46,11 +46,11 @@ export function About() {
             {PROCESS.map((p, i) => (
               <Reveal key={p.no} delay={i * 0.08}>
                 <motion.div whileHover={{ y: -6 }} className="group">
-                  <div className="mb-4 font-display text-5xl font-medium text-white/10 transition-colors group-hover:text-accent">
+                  <div className="mb-4 font-display text-5xl font-medium text-ink/10 transition-colors group-hover:text-accent">
                     {p.no}
                   </div>
                   <h4 className="mb-2 text-lg font-medium">{p.title}</h4>
-                  <p className="text-sm text-white/55">{p.body}</p>
+                  <p className="text-sm text-ink/55">{p.body}</p>
                 </motion.div>
               </Reveal>
             ))}

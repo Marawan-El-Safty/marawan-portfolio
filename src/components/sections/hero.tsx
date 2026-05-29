@@ -23,15 +23,15 @@ export function Hero() {
       className="relative flex min-h-screen flex-col justify-center overflow-hidden pt-32"
     >
       {/* Ambient glows */}
-      <div className="glow left-[-10%] top-[10%] h-[420px] w-[420px] bg-accent2/30" />
-      <div className="glow right-[-5%] top-[30%] h-[380px] w-[380px] bg-accent/20" />
+      <div className="glow left-[-10%] top-[10%] h-[420px] w-[420px] bg-accent2/20" />
+      <div className="glow right-[-5%] top-[30%] h-[380px] w-[380px] bg-accent/10" />
 
       <motion.div style={{ y, opacity }} className="container-x relative z-10">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
-          className="mb-8 flex items-center gap-3 text-sm text-white/60"
+          className="mb-8 flex items-center gap-3 text-sm text-ink/60"
         >
           {PROFILE.available && (
             <span className="flex items-center gap-2">
@@ -42,7 +42,7 @@ export function Hero() {
               Available for freelance work
             </span>
           )}
-          <span className="text-white/20">/</span>
+          <span className="text-ink/20">/</span>
           <span>{PROFILE.location}</span>
         </motion.div>
 
@@ -61,7 +61,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.8 }}
-            className="max-w-md text-balance text-lg text-white/70"
+            className="max-w-md text-balance text-lg text-ink/70"
           >
             {PROFILE.tagline}
           </motion.p>
@@ -86,7 +86,7 @@ export function Hero() {
 
       <motion.div
         style={{ opacity }}
-        className="container-x relative z-10 mt-16 flex items-center gap-2 text-xs uppercase tracking-widest text-white/40"
+        className="container-x relative z-10 mt-16 flex items-center gap-2 text-xs uppercase tracking-widest text-ink/40"
       >
         <ArrowDown className="size-4 animate-bounce" />
         Scroll to explore

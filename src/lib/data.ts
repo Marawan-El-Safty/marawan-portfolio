@@ -73,7 +73,7 @@ export const PROJECTS: Project[] = [
     category: "Full-Stack CRM",
     year: "2026",
     blurb:
-      "A logistics CRM for managing clients, shipments and operations — auth, role-based access, dashboards, and a clean REST API backend.",
+      "A logistics CRM for managing clients, shipments and operations — auth, role-based access, dashboards, and a clean REST API backend. Used in production by Safty Group.",
     tags: ["React", "Node.js", "PostgreSQL", "REST API"],
     code: "https://github.com/Marawan-El-Safty/FreightDesk-CRM",
   },
@@ -111,35 +111,7 @@ export const PROCESS = [
   },
 ];
 
-export interface Testimonial {
-  quote: string;
-  name: string;
-  title: string;
-}
-
-export const TESTIMONIALS: Testimonial[] = [
-  {
-    quote:
-      "Delivered exactly what we needed, faster than expected. The UI felt polished from the very first preview — clean, fast, and genuinely premium.",
-    name: "Sarah M.",
-    title: "Startup Founder",
-  },
-  {
-    quote:
-      "Communication was clear and the code was clean and well-structured. Easy to hand off to our team afterwards. Would absolutely work with again.",
-    name: "David R.",
-    title: "Product Manager",
-  },
-  {
-    quote:
-      "Took a rough idea and turned it into a smooth, modern product. Attention to detail on the animations and responsiveness was on another level.",
-    name: "Lina K.",
-    title: "Marketing Lead",
-  },
-];
-
 export const STATS = [
-  { value: "5+", label: "Shipped products" },
   { value: "100%", label: "Job success focus" },
   { value: "24h", label: "Avg. reply time" },
   { value: "∞", label: "Attention to detail" },

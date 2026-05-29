@@ -20,17 +20,17 @@ export function Services() {
         {SERVICES.map((s, i) => (
           <Reveal key={s.no} delay={i * 0.05}>
             <motion.div
-              whileHover={{ backgroundColor: "rgba(199,242,77,0.04)" }}
-              className="group h-full bg-ink p-8 transition-colors sm:p-10"
+              whileHover={{ backgroundColor: "rgba(109,73,255,0.05)" }}
+              className="group h-full bg-paper p-8 transition-colors sm:p-10"
             >
               <div className="mb-8 flex items-center justify-between">
-                <span className="text-sm text-white/30">{s.no}</span>
-                <span className="size-2 rounded-full bg-white/20 transition-colors group-hover:bg-accent" />
+                <span className="text-sm text-ink/30">{s.no}</span>
+                <span className="size-2 rounded-full bg-ink/20 transition-colors group-hover:bg-accent" />
               </div>
               <h3 className="mb-3 font-display text-2xl font-medium sm:text-3xl">
                 {s.title}
               </h3>
-              <p className="text-white/60">{s.body}</p>
+              <p className="text-ink/60">{s.body}</p>
             </motion.div>
           </Reveal>
         ))}

@@ -13,9 +13,9 @@ export function Work() {
           <h2 className="font-display text-4xl font-medium tracking-tight sm:text-6xl">
             Selected
             <br />
-            <span className="text-white/40">Work</span>
+            <span className="text-ink/40">Work</span>
           </h2>
-          <span className="hidden text-sm uppercase tracking-widest text-white/40 sm:block">
+          <span className="hidden text-sm uppercase tracking-widest text-ink/40 sm:block">
             ({String(PROJECTS.length).padStart(2, "0")})
           </span>
         </div>
@@ -44,7 +44,7 @@ function ProjectRow({ project, index }: { project: Project; index: number }) {
           className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-r from-accent2/5 via-transparent to-accent/5"
         />
 
-        <div className="flex items-center gap-4 text-sm text-white/40 md:col-span-2">
+        <div className="flex items-center gap-4 text-sm text-ink/40 md:col-span-2">
           <span>{project.year}</span>
           <span className="rounded-full border border-line px-3 py-1 text-xs">
             {project.category}
@@ -55,14 +55,14 @@ function ProjectRow({ project, index }: { project: Project; index: number }) {
           <h3 className="font-display text-3xl font-medium tracking-tight transition-colors group-hover:text-accent sm:text-4xl">
             {project.title}
           </h3>
-          <p className="mt-3 max-w-md text-white/60">{project.blurb}</p>
+          <p className="mt-3 max-w-md text-ink/60">{project.blurb}</p>
         </div>
 
         <div className="flex flex-wrap gap-2 md:col-span-3">
           {project.tags.map((t) => (
             <span
               key={t}
-              className="rounded-full border border-line px-3 py-1 text-xs text-white/50"
+              className="rounded-full border border-line px-3 py-1 text-xs text-ink/50"
             >
               {t}
             </span>
@@ -76,7 +76,7 @@ function ProjectRow({ project, index }: { project: Project; index: number }) {
               target="_blank"
               rel="noreferrer"
               aria-label={`${project.title} source code`}
-              className="grid size-11 place-items-center rounded-full border border-line transition-colors hover:border-white hover:text-white"
+              className="grid size-11 place-items-center rounded-full border border-line transition-colors hover:border-ink hover:text-ink"
             >
               <Github className="size-4" />
             </a>
@@ -87,7 +87,7 @@ function ProjectRow({ project, index }: { project: Project; index: number }) {
               target="_blank"
               rel="noreferrer"
               aria-label={`${project.title} live site`}
-              className="grid size-11 place-items-center rounded-full bg-white text-ink transition-colors hover:bg-accent"
+              className="grid size-11 place-items-center rounded-full bg-ink text-paper transition-colors hover:bg-accent hover:text-white"
             >
               <ArrowUpRight className="size-4" />
             </a>

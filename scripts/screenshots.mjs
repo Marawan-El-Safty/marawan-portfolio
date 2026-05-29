@@ -1,7 +1,7 @@
 import { chromium } from "playwright";
 import { mkdirSync } from "node:fs";
 
-const BASE = "http://localhost:3000";
+const BASE = process.env.BASE || "http://localhost:3000";
 const OUT = "docs";
 mkdirSync(OUT, { recursive: true });
 
