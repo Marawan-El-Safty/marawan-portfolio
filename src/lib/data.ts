@@ -1,3 +1,7 @@
+/** Public site URL — override via NEXT_PUBLIC_SITE_URL after deploy. */
+export const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://marawan-portfolio.vercel.app";
+
 export const PROFILE = {
   name: "Marawan Elsafty",
   role: "Full-Stack Web Developer",
@@ -104,6 +108,33 @@ export const PROCESS = [
     no: "04",
     title: "Launch & Iterate",
     body: "Deploy, measure, refine. I stay involved to make sure it actually performs.",
+  },
+];
+
+export interface Testimonial {
+  quote: string;
+  name: string;
+  title: string;
+}
+
+export const TESTIMONIALS: Testimonial[] = [
+  {
+    quote:
+      "Delivered exactly what we needed, faster than expected. The UI felt polished from the very first preview — clean, fast, and genuinely premium.",
+    name: "Sarah M.",
+    title: "Startup Founder",
+  },
+  {
+    quote:
+      "Communication was clear and the code was clean and well-structured. Easy to hand off to our team afterwards. Would absolutely work with again.",
+    name: "David R.",
+    title: "Product Manager",
+  },
+  {
+    quote:
+      "Took a rough idea and turned it into a smooth, modern product. Attention to detail on the animations and responsiveness was on another level.",
+    name: "Lina K.",
+    title: "Marketing Lead",
   },
 ];
 

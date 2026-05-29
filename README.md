@@ -28,7 +28,10 @@ Built with Next.js 14, TypeScript, Tailwind CSS, and Framer Motion.
 - **Word-by-word masked headline reveals** on scroll
 - **Parallax hero** with ambient gradient glows and film grain
 - **Infinite tech-stack marquee**
-- **Animated work, services, about & contact sections**
+- **Animated work, services, testimonials, about & contact sections**
+- **Animated mobile menu** — hamburger → full-screen overlay
+- **Dynamic OG image, favicon, sitemap & robots** generated at the edge (great
+  social previews + SEO, no external services)
 - Fully **responsive**, **accessible**, and **reduced-motion friendly**
 - **Zero backend** — deploys free anywhere, loads instantly
 
